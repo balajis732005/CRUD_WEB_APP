@@ -1,0 +1,17 @@
+<app-navbarafterlogin class="fixed top-0 w-full"></app-navbarafterlogin>
+
+<div class="w-[30%] h-[600px] flex flex-col mx-[35%] mt-12 rounded-xl shadow-2xl px-10 justify-evenly items-center
+            max-sm:w-[90%] max-sm:mx-4 md:w-[80%] md:mx-20 md:px-28 lg:w-[60%] lg:mx-[20%] xl:w-[40%] xl:mx-[30%] 
+            2xl:w-[35%] xl:px-20 2xl:px-18 2xl:mx-[33%]">
+
+    <p class="text-blue-600 text-2xl">Welcome &nbsp; <span class="text-red-600 text-3xl">{{userData.userName}}</span> &nbsp; for CRUD BRUD</p>
+
+    <button (click)="toUpdate()" class="bg-green-600 text-black w-32 h-10 rounded-full hover:bg-blue-600 hover:text-white hover:font-bold py-2 font-bold">
+        ToUpdate
+    </button>
+    
+    <button (click)="toDelete()" class="bg-red-600 text-black w-32 h-10 rounded-full hover:bg-yellow-500 hover:text-red-600 hover:font-bold py-2 font-bold">
+        ToDelete
+    </button>
+
+</div>

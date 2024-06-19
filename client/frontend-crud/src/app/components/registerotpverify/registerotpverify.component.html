@@ -1,0 +1,21 @@
+<app-navbar class="fixed top-0 w-full"></app-navbar>
+
+<p class="text-3xl text-center font-serif pt-32">EMAIL VERIFICATION ENVIROINMENT</p>
+
+<form [formGroup]="registrationForm" (ngSubmit)="onOtpSubmit()" 
+    class="w-[30%] h-[400px] flex flex-col bg-sky-600 mx-[35%] mt-12 rounded-xl shadow-2xl px-10 justify-evenly
+    max-sm:w-[90%] max-sm:mx-4 md:w-[80%] md:mx-20 md:px-28 lg:w-[60%] lg:mx-[20%] xl:w-[40%] xl:mx-[30%] 2xl:w-[35%] xl:px-20 2xl:px-18 2xl:mx-[33%]">
+
+    <p class="text-white text-xl">😊Please wait until OTP has been sent to your Email Id</p>
+
+    <p class="text-white text-xl">😊After that Place the Otp Here to verify your Email</p>
+
+    <label class="text-white text-2xl">OTP</label>
+
+    <input type="text" formControlName="otp" class="border-black border-2 rounded-xl w-full h-14 px-3 max-sm:w-[95%]" placeholder="Enter your Otp">
+
+    <button class="bg-black text-white w-20 h-10 rounded-full hover:bg-white hover:text-blue-900 hover:font-bold py-2 mx-[40%] max-sm:mx-[30%]">
+        Submit
+    </button>
+    
+</form>
